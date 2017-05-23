@@ -109,7 +109,7 @@ func main() {
 		n := NetworkMetaData{message.Metadata.Time}
 		meta := MessageMetadata{n}
 		m := Message{
-			message.DevID,
+			message.HardwareSerial,
 			base64.StdEncoding.EncodeToString(message.PayloadRaw),
 			meta,
 		}
